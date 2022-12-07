@@ -1,0 +1,39 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50%;
+
+    
+  }
+
+.col2{
+
+    column-count: 5;
+    column-gap: 4em;
+    column-rule: 2px solid rgb(13, 13, 13);
+    column-width: 200px;
+    
+    }
+
+h1 {
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration-line: overline;
+    text-decoration-color:white;
+  }
+  
+  h2 {
+    text-decoration-line: line-through;
+    text-decoration-color: white;(248, 248, 250);
+  }
+  
+ 
+
+  h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgb(236, 159, 51), 0 0 25px rgb(237, 174, 27), 0 0 5px rgb(237, 174, 27);
+  }
+
+ 
