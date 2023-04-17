@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/*Imports the font for the whole webpage*/
+* {
+    margin: 0;
+    padding: 0;
+} /*Removes all padding and margin*/
+body {
+    font-family: 'Open Sans', sans-serif;
+} /*Changes font for all text*/
+.navbar {
+    background-color: orange;
+    display: grid;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-template-columns: 0.1fr 2fr 0.1fr;
+    grid-template-areas: "men title btns";
+} /*Adds a navbar that is orange with contents divided by using grid fractions as well as telling them where they're placed out*/
+.menu {
+    color: white;
+    grid-area: men;
+    width: 100%;
+    display: inline-block;
+    background-color: black;
+} /*Changes the color of the menu to black, text color being white and maxing out width for the background*/
+.menu ul {
+    list-style-type: none;
+} /*Removes dots*/
+
+.menu a:hover {
+    color: black;
+    background-color: white;
+} /*Changes color and background color when hovering over*/
+
+.menu li:hover {
+    color: black;
+    background-color: white;
+} /*Changes color and background color when hovering, needed so the whole row changes color and not just a part of it*/
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}  /*Removes underline and changes color from blue/purple to white*/
+.title {
+    margin: auto;
+    grid-area: title;
+    display: inline-block;
+}  /**/
+
+.imgtitle {
+    margin: auto;
+    column-count: 3;
+}/*Title is placed in the middle with the images. Images are put on the sides thanks to columns*/
+.imgt img{
+    height: 100px;
+} /*Sets an height on img so it isn't out of place and extremely large*/
+.title p h1{
+    display: inline-block;
+} /*makes sure that they're all on the same row*/
+.buttons {
+    grid-area: btns;
+    width: 100px;
+    height: 20px;
+} /*The last part of the navbar, put on the right, defining how tall and long it is*/
+
+.buttons a {
+    text-decoration: none;
+    color: black;
+} /*Removes underline in the text inside and changes the color*/
+
+.box{
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: lightgrey;
+} /*Maxes out the wdith of the whole screen, adds space between the search bar and the bottom as well as changes the background for the whole box */
+
+#search {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    padding: 10px;
+} /*Identified by the ID tag, using # it refrences to the searchbar itself. Center the search bar by margin and display: block, make the width half the length of the box and give the text/placeholder some space which makes  the search bar bigger*/
+
+.content {
+    margin: 10px 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "txt image ad";
+}
+/*Between each row of content, there will be a space of 10px. Content is divided up by grid*/
+.contents {
+    margin: 10px 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+} /*This is the same thing as .content, just on the other page and since there isn't 3 completely different things, you don't need grid-template-areas. It will understand just fine without. */
+.ad {
+    grid-area: ad;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} /*This uses flexbox to center the images in the middle of the div. It has an height that is very responsive as well as width that is responsive*/
+.image {
+    grid-area: image;
+    width: 100%;
+} /*This defines that the image class is taking up 100% of its fraction*/
+.image img {
+    width: 90%;
+    height: auto;
+    margin: 10px;
+} /*This gives the actual image a width, an responsive height and some space between the border of 10px*/
+.text {
+    grid-area: txt;
+    width: 100%;
+    color: black;
+}
+.text p {
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+/*Responsive text, with a space of 10px between the border, with the text color being black and  taking up 100% of it's fraction*/
+.ad img {
+width: 60%;
+height: 100%;
+}
+/*This takes up only 60% of the actual width of the original image, and maxing out the height.*/
+footer {
+    background-color: orange;
+    width: 100%;
+    height: auto;
+    text-align: center;
+} /*This is for the footer, only using the necessary height needed for the text and centering the text with an orange background to match the navbar.*/
+
+.txt p {
+    margin: 0px 40px;
+}
+
+.img img {
+    width: 90%;
+    height: auto;
+}
